@@ -1,0 +1,20 @@
+<form role="form" [ngFormModel]="registerForm">
+ <div class="form-group">
+    <label for="imeHotela">Ime hotel:</label>
+    <input type="text" class="form-control" ngControl='imeHotela'>
+  </div>
+  <div class="form-group">
+    <label for="lokacija">Lokacija:</label>
+    <input type="text" class="form-control" ngControl='lokacija'>
+  </div>
+  <div class="form-group">
+    <label for="kapacitet">Kapacitet:</label>
+    <input type="text" class="form-control" ngControl='kapacitet'>
+  </div>
+  
+  <div class="form-group">
+    <label for="sobe">Broj soba:</label>
+    <input type="text" class="form-control"  ngControl='sobe'>
+  </div>
+  <button (click)="onAddHotel()" class="btn btn-default">Dodaj hotel</button>
+</form>

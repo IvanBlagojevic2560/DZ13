@@ -1,0 +1,18 @@
+<form role="form" [ngFormModel]="registerForm">
+ <div class="form-group">
+    <label for="ime">Ime:</label>
+    <input type="text" class="form-control" ngControl='ime'>
+  </div>
+   <div class="form-group">
+    <label for="TV">TV:</label>
+	<select class="form-control" ng-selected="Yes" ngControl='TV'>
+		<option value="1" >Da</option>
+		<option value="0" >Ne</option>
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="kreveti">Broj kreveta:</label>
+    <input type="text" class="form-control"  ngControl='kreveti'>
+  </div>
+  <button (click)="onAddRoom()" class="btn btn-default">Dodaj sobu</button>
+</form>
