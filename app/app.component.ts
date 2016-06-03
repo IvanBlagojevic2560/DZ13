@@ -18,9 +18,9 @@ import { Sobe }  from './sobe/sobe.component';
 @Routes([
   {path:'/',    name: 'MainPage',   component: MainPageComponent, useAsDefault: true},
   {path:'/aboutus', name:'AboutUs', component: AboutUsComponent},
-{path:'/form', name:'FormPage', component: FormComponent}
-{path:'/form2', name:'FormPage2', component: FormComponent2}
-  {path:'/form3', name:'FormPage3', component: FormComponent3}
+{path:'/form', name:'FormPage', component: FormComponent},
+{path:'/form2', name:'FormPage2', component: FormComponent2},
+  {path:'/form3', name:'FormPage3', component: FormComponent3},
   {path:'/form4', name:'FormPage4', component: FormComponent4},
   {path:'/sobe', name:'Sobe', component: Sobe},
 
