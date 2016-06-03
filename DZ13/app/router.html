@@ -1,0 +1,38 @@
+
+
+   
+    <nav class="navbar navbar-inverse">
+ <div class="container-fluid">
+ <div class="navbar-header">
+ <button type="button" class="navbar-toggle" data-toggle="collapse" datatarget="#myNavbar">
+
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+ <a class="navbar-brand" [routerLink]="['MainPage']">MetHotels</a>
+
+ </div>
+ <div class="collapse navbar-collapse" id="myNavbar">
+ <ul class="nav navbar-nav">
+ <li [class.active]="router.isRouteActive(router.generate(['MainPage']))"><a [routerLink]="['./mainpage']">Home <span class="sr-only">(current)</span></a></li>
+ <li [class.active]="router.isRouteActive(router.generate(['AboutUs']))"><a [routerLink]="['./aboutus']">About us</a></li>
+ <li [class.active]="router.isRouteActive(router.generate(['FormPage3']))"><a [routerLink]="['./form3']">Dodaj sobu</a></li>
+ <li [class.active]="router.isRouteActive(router.generate(['FormPage4']))"><a [routerLink]="['./form4']">Dodaj hotel</a></li>
+ <li *ngIf="isAuth == 'yes'" [class.active]="router.isRouteActive(router.generate(['Sobe']))"><a [routerLink]="['./sobe']">Sve sobe</a></li>
+ <li *ngIf="isAuth == 'yes'" ><a (click)="onLogout()">Logout</a></li>
+               			  
+ </ul>
+
+ <ul class="nav navbar-nav navbar-right">
+ <li *ngIf="isAuth == 'no'" [class.active]="router.isRouteActive(router.generate(['FormPage']))"><a [routerLink]="['./form']">Registracija</a></li>  
+<li *ngIf="isAuth == 'no'" [class.active]="router.isRouteActive(router.generate(['FormPage2']))"><a [routerLink]="['./form2']">Prijavljivanje</a></li>
+				  
+
+ </ul>
+ </div>
+ </div>
+</nav>
+<div class="container">
+<router-outlet></router-outlet>
+</div>

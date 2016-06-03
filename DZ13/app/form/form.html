@@ -1,0 +1,40 @@
+<div class="signin-form">
+
+	<div class="container">
+
+
+   
+     
+        
+       <form class="form-signin" method="post" id="register-form">
+      
+        <h2 class="form-signin-heading">Registruj se</h2><hr />
+        
+        
+          
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="KorisnikckoIme" name="username" required  />
+        </div>
+        
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="Ime " name="firstName" required  />
+      
+        </div>
+		<div class="form-group">
+        <input type="text" class="form-control" placeholder="Prezime " name="lastName" required  />
+      
+        </div>
+        
+        <div class="form-group">
+        <input type="password" class="form-control" placeholder="Sifra" name="password" required  />
+        </div>
+        
+     	<hr />
+        
+			 <button (click)="onRegister()" class="btn btn-default"><span class="glyphicon glyphicon-log-in"></span> &nbsp; Registruj se</button>
+      
+      </form>
+
+    </div>
+    
+</div>
